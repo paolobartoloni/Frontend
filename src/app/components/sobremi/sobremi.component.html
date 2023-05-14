@@ -1,0 +1,78 @@
+<body>
+<!--
+
+        <div class="sobremi">
+            
+            <h1>Hola, soy </h1>
+            <p>Lorem ipsum dolor sit amet. Hic minus nostrum quo enim quia Et tempore sit minus deleniti et alias perferendis ea expedita eveniet. Non rerum laborumQui consequatur in debitis rerum eum aperiam laudantium cum odio repellat.
+                Et soluta nulla ut necessitatibus dignissimosEx enim est dignissimos doloribus non animi dolorem et reprehenderit provident ea molestiae porro. 
+                Ut nesciunt numquam et sint dolore Id omnis qui inventore ipsam non dolor pariatur eos harum omnis.
+                Hic deleniti consequatur Nam sequi ea dolorum rerum aut similique rerum est sequi dolor aut placeat accusamus vel eligendi exercitationem. Aut odit ametEum alias et neque voluptatem ut iure vero eum tempore quasi ut enim eligendi et consequatur omnis. Ut molestiae consequatur nam explicabo deserunt Et earum sed blanditiis laboriosam eos esse unde ut doloremque eligendi. 
+                Et enim sint sed assumenda numquamEt voluptatum ad accusamus harum?</p>
+        </div>
+
+      
+        <div class="container">
+            
+        <div class="datospersonales">
+            
+            <h1>Datos Personales</h1>
+            <p></p>
+            <ul class="lista-datos">
+                <li><p>Email: paolomb31@gmail.com</p></li>
+                <li><p>Telefono: 3794-235821</p></li>
+                <li><p>Direccion: Las heras 1224</p></li>
+                <li><p>Fecha de nacimiento: 31/10/1985</p></li>
+            </ul>
+        </div>
+
+        
+        <div class="datoseducacion">
+            
+            
+            
+            <h1>Educacion</h1>
+            <h1></h1>
+            <div class="containerimagen">
+            <img src="../../../assets/imagenes/escuela.jpg" alt="img2">
+            <p></p>
+            </div>
+            <div class="containerimagen">  
+            <img src="../../../assets/imagenes/unne.jpg" alt="img2">
+            <p>Universidad Nacional del Nordeste</p>
+            </div>
+            </div>
+
+            
+        </div>
+   -->
+   <div class="sobremi">
+        <div class="row">
+
+            <div class="col-lg-2">
+                <button type="button"><i class="fa-solid fa-pen-to-square" routerLink="/nuevosobremi" *ngIf="isLogged"></i></button>
+            </div>
+
+            <h1>Sobre mi</h1>
+        
+            <div class="col lg 3">
+                <div class="col-lg-11">
+                <table class="table">
+                <tbody>
+                    <tr *ngFor="let Sobremi of sobremi">
+                        <td>{{Sobremi.nombre}}</td>
+                        <td>{{Sobremi.descripcion}}</td>
+                        <td><button type="button"><i class="fa-solid fa-pen-to-square" routerLink="/editsobremi/{{Sobremi.id}}" *ngIf="isLogged"></i></button></td>
+                        <td><button type="button"><i class="fa-solid fa-trash" (click)="delete(Sobremi.id)" *ngIf="isLogged"></i></button></td>
+                    </tr>
+                </tbody>
+                </table>
+                </div>
+            </div>
+        
+        
+        
+        </div>
+    </div>
+
+</body>

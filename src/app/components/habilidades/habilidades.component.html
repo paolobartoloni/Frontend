@@ -1,0 +1,66 @@
+          
+                
+
+        <div class="contenedor" >
+
+            <div class="contenedor-perfil">
+                <div class="col-lg-2">
+                    <button type="button"><i class="fa-solid fa-pen-to-square" routerLink="/nuevahabilidad" *ngIf="isLogged"></i></button>
+            </div>  
+
+            <h1>Habilidades</h1>
+            
+            <div class="contenedor-skills" id="skills" *ngFor="let habilidad of habilidad"> 
+                
+                <div class="skill">
+                    
+                        <p><span class="lista"> </span>{{habilidad.nombre}}</p>
+                        <circle-progress
+                        [percent]="(habilidad.porcentaje)"
+                        [radius]= "60"
+                        [space]= "-10"
+                        [backgroundOpacity]="1"
+                        [outerStrokeGradient]= "true"
+                        [outerStrokeWidth]= "10"
+                        [outerStrokeColor]= "'#DCDCDC'"
+                        [outerStrokeGradientStopColor]= "'#808080'"
+                        [innerStrokeColor]= "'#e7e8ea'"
+                        [innerStrokeWidth]= "10"
+                        [lazy]="true"
+                        [showUnits]="false"
+                        [showTitle]="false"
+                        [showSubtitle]="false"
+                        [clockwise]="false"
+                        [showImage]="true"
+                        [imageHeight]="70"
+                        [imageWidth]="70"
+                        [imageSrc]="''"></circle-progress>
+
+                          
+                        <div class="editborrar" *ngIf="isLogged">
+                        
+                            <button type="button"><i class="fa-solid fa-pen-to-square" routerLink="/edithabilidad/{{habilidad.id}}" *ngIf="isLogged"></i></button>
+                            <button type="button"><i class="fa-solid fa-trash" (click)="delete(habilidad.id)" *ngIf="isLogged"></i></button>
+                        </div>
+                </div>    
+
+                    
+                
+                
+                
+                
+            </div>
+
+            
+                
+        </div>
+       
+            
+
+
+
+
+    
+    
+
+    

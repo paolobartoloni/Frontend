@@ -1,0 +1,19 @@
+<div class="container" *ngIf="sobremi">
+    <div class="row">
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+            <div class="form-group">
+                <label for="nombreE">titulo sobre mi</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="sobremi.nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="descripcion">descripcion </label>
+
+                <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="sobremi.descripcion" required>
+            </div>
+            <button class="btn btn-primary" >Actualizar Sobremi</button>
+
+        </form>
+    </div>
+
+
+</div>

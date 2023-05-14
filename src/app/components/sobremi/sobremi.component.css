@@ -1,0 +1,232 @@
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+    max-width: 100%;
+}
+
+.sobremi {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+
+    padding: 30px 30px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.sobremi h1{
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-left: 75px;
+    text-align: center;
+    justify-content: center;
+}
+
+.sobremi p{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 75px;
+    padding-right: 75px;
+    text-align: left;
+    justify-content: center;
+}
+
+
+.datospersonales {
+    width: 100%;
+
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+
+    padding: 10px 10px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.datospersonales h1{
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.datospersonales p{
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+    text-align: left;
+    justify-content: center;
+}
+
+/*.datospersonales li{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: left;
+    justify-content: center;
+}
+
+.datospersonales ul{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+    justify-content: center;
+}*/
+
+.datoseducacion{
+    width: 100%;
+    
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+    padding: 10px 10px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.datoseducacion h1{
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+/*.datoseducacion p{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 75px;
+    padding-right: 75px;
+    text-align: left;
+    justify-content: center;
+}*/
+
+.datoseducacion li{
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 0px;
+    text-align: left;
+    justify-content: center;
+}
+
+@media (max-width:600px){
+    .container{
+        flex-wrap: wrap;
+    }
+}
+
+/*=============================== imagenes educacion*/
+.containerimagen{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.datoseducacion h1{
+    text-align: center;
+}
+
+.datoseducacion img{
+   width: 50px;
+   text-align: center;
+}
+.containerimagen p{
+    margin-top: 35px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+/*=============== boton editar vistas*/
+.sobremi{
+    position: relative;
+}
+.sobremi .row .col-lg-2 button{
+    
+    position: absolute;
+    right: 10px;
+    font-size: medium;
+    background: none;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+}
+.sobremi .row .col-lg-2 button:hover{
+    color: #ccc;
+}
+
+.sobremi .col-lg-11 button{
+    position: absolute;
+    font-size: medium;
+    background: none;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+}
+.sobremi .col-lg-11 button:hover{
+    color: #ccc;
+}
+
+.datospersonales {
+    position: relative;
+}
+
+.datospersonales button{
+    display: block;
+    position: absolute;
+    right: 10px;
+    font-size: medium;
+    background: none;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+}
+.datospersonales button:hover{
+   
+    color: #ccc;
+}
+
+.datoseducacion {
+    position: relative;
+}
+
+.datoseducacion button{
+    display: block;
+    position: absolute;
+    right: 10px;
+    font-size: medium;
+    background: none;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+}
+.datoseducacion button:hover{
+   
+    color: #ccc;
+}
+

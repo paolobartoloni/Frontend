@@ -1,0 +1,29 @@
+
+<div class="sobremi">
+    <div class="row">
+        
+        <div class="col-lg-2">
+            <button type="button"><i class="fa-solid fa-pen-to-square" routerLink="/nuevaexp" *ngIf="isLogged"></i></button>
+        </div>
+
+    <h1>Experiencia Laboral</h1>
+
+    <div class="col lg 3">
+        <div class="col-lg-11">
+        <table class="table">
+        <tbody>
+            <tr *ngFor="let Experiencia of expe">
+                <td>{{Experiencia.nombreE}}</td>
+                <td>{{Experiencia.descripcion}}</td>
+                <td><button type="button"><i class="fa-solid fa-pen-to-square" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged"></i></button></td>
+                <td><button type="button"><i class="fa-solid fa-trash" (click)="delete(Experiencia.id)" *ngIf="isLogged"></i></button></td>
+            </tr>
+        </tbody>
+        </table>
+        </div>
+    </div>
+
+
+
+
+</div>

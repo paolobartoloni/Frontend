@@ -1,0 +1,71 @@
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.wrapper{
+    /*position: absolute; /* CENTRAR */
+    /**padding-top: 50%; /* CENTRAR */
+    /*width: 100%; /* CENTRAR */
+    /*padding: 0px 20px;/* CENTRAR */ 
+    padding-bottom: 50px;
+    }
+
+.contact-title h2{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    justify-content: center;
+    
+    }
+
+    .form-group{
+        max-width: 550px;/* CENTRAR */
+        margin: 0 auto; /* CENTRAR */
+        padding: 10px 10px;
+        background: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        
+        }
+        
+        .form-group input[type=text]{
+        width: 100%; 
+        padding: 12px;  
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+        box-sizing: border-box; 
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: none;
+        color: black;
+        }
+        
+        .form-group textarea{
+        width: 100%;
+        padding: 12px;  
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+        box-sizing: border-box; 
+        margin-top: 6px;
+        margin-bottom: 16px; 
+        max-height: 200px;
+        min-height: 200px;
+        resize: none;
+        color: black;
+        }
+        
+        .form-group input[type=button]{
+        width: 100%;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        transition: .5s;
+        padding: 10px 15px
+        
+        }    
+        .form-group input[type=button]:hover{
+            background-color: #000;
+            color: #ccc;
+        }
+
+

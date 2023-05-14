@@ -1,0 +1,84 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <section class="perfil-usuario">
+        <div class="contenedor-perfil">
+            <div class="portada-perfil" style="background-image: url('../../../assets/imagenes/fondo-inicio.jpg');">
+                <div class="sombra"></div>
+                <div class="avatar-perfil">
+                    <img src={{persona.img}} alt="img">
+                    <!--<a href="#" class="cambiar-foto">
+                        <i class="fas fa-camera"></i> 
+                        <span>Cambiar foto</span>
+                    </a>-->
+                    
+                </div>
+                <div class="datos-perfil">
+                    <h4 class="titulo-usuario">{{persona.nombre}} {{persona.apellido}}</h4>
+                    <p class="bio-usuario">{{persona.descripcion}}</p>
+                    <ul class="lista-perfil">
+                        <li>Corrientes, Argentina</li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="opcciones-perfil">
+                    <button type="button" routerLink="/editportada/1" *ngIf="isLogged"><i class="fa-solid fa-pen-to-square"></i></button>
+                </div>
+
+                <!--Iconos redes sociales-->
+                <div class="redes">
+                    <a href="https://www.instagram.com/paolomb31"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/paolo.matias.bartoloni"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/PaoloBartoloni"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+
+            </div>
+            <div class="menu-perfil">
+                <ul>
+                    
+                    <!--<li><a routerLink=""  class="seleccionado" onclick="seleccionar(this)"><i class="icono-perfil fas fa-bullhorn"></i> Inicio</a></li>
+                    
+                    
+                    <li><a routerLink="" onclick="seleccionar(this)"><i class="icono-perfil fas fa-info-circle"></i> Sobre mi</a></li>
+                    
+                   
+                    <li><a routerLink="" onclick="seleccionar(this)"><i class="icono-perfil fa-solid fa-hand"></i> Habilidades</a></li>
+                    
+                    
+                    <li><a routerLink="" onclick="seleccionar(this)"><i class="icono-perfil fa-solid fa-envelope"></i> Contacto</a></li>-->
+
+                    <li><a href="/login" class="icono-perfil fa-solid fa-right-to-bracket" (click)="login()" *ngIf="!isLogged"></a></li>
+                    <li><a class="icono-perfil fa-solid fa-right-to-bracket" (click)="onLogOut()" *ngIf="isLogged"></a></li>
+                    
+
+                    <!--<li><a href="" ><i class="icono-perfil fa-solid fa-circle-plus"></i> Añadir Seccion</a></li>-->
+                
+                    
+                </ul>
+            </div>
+        </div>
+
+
+    </section>
+    
+    <!--<div class="portfolio">
+        
+       <h1>Bienvenidos a mi Portfolio</h1>
+        <p>
+        </p>
+    </div>-->
+
+    
+    
+</body>
+
